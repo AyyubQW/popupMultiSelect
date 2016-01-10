@@ -4,8 +4,8 @@
  * Popup Multi Select
  * Created By Harshniket Seta
  * Currently maintained by harshniketseta [at] gmail [dot] com
- * Version: 1.0.2
- * Release: 2015-06-09
+ * Version: 2.0.0
+ * Release: 2016-02-19
  * ======================================================================== */
 
 (function ($) {
@@ -32,10 +32,10 @@
 
   MultiSelect.DEFAULTS = {
     animation: true,
-    selectTemplate: '<div class="selectWrap clearfix"><span class="select-content"></span><a href="#" class="open-options clickable"><span class="glyphicon glyphicon-list" aria-hidden="true"></span></a></div>',
-    selectOptionTemplate: '<span class="addedOption" ><span class="text"></span><span class="clickable removeOption"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></span></span>',
+    selectTemplate: '<div class="selectWrap clearfix"><span class="select-content"></span><a href="#" class="open-options clickable"><span class="fa fa-list" aria-hidden="true"></span></a></div>',
+    selectOptionTemplate: '<span class="addedOption" ><span class="text"></span><span class="clickable removeOption"><span class="fa fa-times" aria-hidden="true"></span></span></span>',
     modalTemplate: '<div class="select modal in" aria-hidden="false"><div class="modal-dialog modal-sm"><div class="modal-content"><div class="modal-header"><span class="pull-right clickable close" aria-hidden="true">x</span><h4 class="modal-title"></h4><div class="help-block"></div></div><div class="modal-body"></div></div></div></div>',
-    modalOptionTemplate: '<div class="option clickable"><span class="option-text"></span><span class="option-tick"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span></div>',
+    modalOptionTemplate: '<div class="option clickable"><span class="option-text"></span><span class="option-tick"><span class="fa fa-check" aria-hidden="true"></span></span></div>',
     title: 'Select Options'
   };
 
@@ -152,7 +152,7 @@
 
   MultiSelect.prototype.getSelectOpenIcon = function () {
     var $openOptions = this.getMultiSelectOpen()
-      , optionsOpenIcon = $openOptions.find("span.glyphicon")
+      , optionsOpenIcon = $openOptions.find("span.fa")
       ;
 
     return optionsOpenIcon;

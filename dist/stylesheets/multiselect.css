@@ -41,7 +41,7 @@
   color: #000;
   right: 0px;
 }
-.selectWrap > .open-options > span.glyphicon {
+.selectWrap > .open-options > span.fa {
   font-size: 14px;
 }
 .selectWrap.disabled > .open-options {
